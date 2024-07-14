@@ -1,0 +1,38 @@
+project/
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── ...
+│   ├── js/
+│   │   ├── script.js
+│   │   └── ...
+│   ├── images/
+│   │   ├── logo.png
+│   │   └── ...
+│   └── fonts/
+│       ├── custom-font.woff
+│       └── ...
+│
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   └── navigation.php
+│
+├── pages/
+│   ├── index.php
+│   ├── about.php
+│   ├── contact.php
+│   ├── services.php
+│   ├── blog.php
+│   ├── portfolio.php
+│   └── ...
+│
+└── admin/
+    ├── dashboard.php
+    ├── manage_users.php
+    ├── manage_pages.php
+    ├── settings.php
+    ├── analytics.php
+    ├── reports.php
+    └── ...
