@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaonashi Cove</title>
+    <link rel="stylesheet" href="stylenew.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <button id="menu-toggle">&#9776;</button>
+        <h1>Kaonashi Cove</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li class="accent-purple"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <section>
+            <h2>Section Title</h2>
+            <p>Section content goes here...</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Your Website Name</p>
+    </div>
+</footer>
+
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var navList = document.querySelector('nav');
+    if (navList.classList.contains('show')) {
+        navList.classList.remove('show');
+    } else {
+        navList.classList.add('show');
+    }
+});
+</script>
+
+</body>
+</html>

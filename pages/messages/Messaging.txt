@@ -1,0 +1,7 @@
+**Messaging Directory:**
+   - Within the Pages directory, create a dedicated directory for messaging-related files.
+   - This directory can include subdirectories for different aspects of messaging, such as:
+     - Conversations
+     - Contacts
+     - Settings
+     - Components (for reusable components like message cards or chat interfaces)
