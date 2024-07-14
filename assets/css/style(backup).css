@@ -1,0 +1,111 @@
+/* Add or update in style.css */
+body {
+    background-color: #0a0a0a; /* Dark background */
+    font-family: 'Courier New', Courier, monospace;
+    color: #c5c6c7; /* Light grey text */
+    margin: 0;
+}
+
+.navbar {
+    background-color: #333; /* Darker grey */
+    overflow: hidden;
+    padding: 0; margin: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #a23e2a; /* Rust red accent color */
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar.responsive a:not(:first-child) {
+        display: block;
+    }
+}
+
+.content, .flex-content {
+    padding: 20px;
+    background-color: #1a1a1a; /* Slightly lighter dark background */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly */
+    margin: 0 -10px; /* Negative margin to offset padding */
+}
+
+.flex-item {
+    flex-basis: calc(33.33% - 20px); /* 3 items per row with a 20px gap between them */
+    max-width: calc(33.33% - 20px); /* Account for gap */
+    margin-bottom: 20px; /* Vertical gap between rows */
+    padding: 0 10px; /* Add padding to each item */
+    border: 2px solid green; /* Green border */
+    box-sizing: border-box; /* Include border in item width calculation */
+}
+
+.footer {
+    background-color: #333; /* Darker grey */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-item {
+        flex-basis: calc(50% - 20px); /* 2 items per row on medium screens */
+        max-width: calc(50% - 20px); /* Account for gap */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flex-item {
+        flex-basis: calc(100% - 20px); /* 1 item per row on small screens */
+        max-width: calc(100% - 20px); /* Account for gap */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex-content {
+        padding-bottom: 20px; /* Reduce space for the footer on mobile */
+    }
+}
